@@ -122,7 +122,7 @@ hist_feed
 
 grid.arrange(boxplot_temp,boxplot_time,hist_feed,ncol=3)
 
-##Plor distribution for target variables interval 13,14 and 15.
+##Plot distribution for target variables interval 13,14 and 15.
 feed %>% select(feed_fraction_13,feed_fraction_14,feed_fraction_15) %>% stack %>% 
   ggplot(aes(x = ind, y = values)) +
   geom_boxplot()+
@@ -205,7 +205,7 @@ hist_out
 
 #Combined Histogram for response variables
 #Create data for Histogram
-hist_response.data<-out %>% select(out_fraction_13,out_fraction_14,out_fraction_15) %>% 
+hist_response<-out %>% select(out_fraction_13,out_fraction_14,out_fraction_15) %>% 
   melt(measure.vars = c('out_fraction_13','out_fraction_14','out_fraction_15'))
 #Find mean
 mu_response <-hist_response %>%group_by(variable) %>% summarise(mean=mean(value))
