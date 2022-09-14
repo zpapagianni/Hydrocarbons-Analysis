@@ -31,9 +31,9 @@ The data contains observations for 497 days of 44 variables, which detail the re
 * out fraction:Composition of the effluent hydrocarbon mixtures as the proportion of the overall mass in each of 20 density intervals
 
 Here are the different files:
-* [Hydrocarbon-Analysis-HTML-Report.Rmd](./US-Energy-Consumption.Rmd):The rmarkdown file that contains the detailed step of the analysis.
+* [Hydrocarbon-Analysis-HTML-Report.Rmd](./Hydrocarbon-Analysis-HTML-Report.Rmd):The rmarkdown file that contains the detailed step of the analysis.
 * [Hydrocarbon-Analysis-HTML-Report.md](./Hydrocarbon-Analysis-HTML-Report.md): The github friendly document which contain the detailed step of the analysis,.
-* [Hydrocabon Analysis.R](./US-Energy-Consumption.R): Contains the code that was used for the analysis.
+* [Hydrocabon Analysis.R](./Hydrocabon Analysis.R): Contains the code that was used for the analysis.
 * [data.csv](./data.csv): Input data.
 
 ## Environment
