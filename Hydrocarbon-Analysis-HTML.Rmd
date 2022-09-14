@@ -4,6 +4,8 @@ subtitle: "Exploratory analysis and Prediction"
 output:
   html_document:
     toc: true
+    df_print: paged
+
 ---
 
 ```{r setup, include=FALSE}
@@ -70,7 +72,7 @@ The data contains observations for 497 days of 44 variables, which detail the re
 * feed fraction:Composition of the feed hydrocarbon mixtures as the proportion of the overall mass in each of 20 density intervals.
 * out fraction:Composition of the effluent hydrocarbon mixtures as the proportion of the overall mass in each of 20 density intervals
 
-```{r}
+```{r,echo=FALSE}
 # Load data --------------------------------------------------------------------
 hydro<- read_csv("data.csv") 
 head(hydro,5)  %>% knitr::kable("html") %>%
@@ -291,7 +293,7 @@ Having explored our variables, the following section will discuss the methods us
 ## Correlation Matrix
 The correlation matrix is used to determine if a relationship exists between the variables. It consists of the Pearson correlation coefficients for a set of variables and shows the degree of the relationship as well as the direction. We will also calculate the significance levels (p-values) to identify whether the correlation between variables is significant.
 
-```{r}
+```{r,echo=FALSE}
 #Correlation matrices--------------------------------------------------------------------------------------
 #Prepare data
 features<-df[,2:23]
