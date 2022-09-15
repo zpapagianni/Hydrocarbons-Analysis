@@ -16,10 +16,10 @@ The analysis contains parts:
 
 * Exploratory analysis of the data
 * Prediction
-** Regularisation Methods
-** Random Forest
-** Gradient Boosting Machines (GBMs)
-** Partial Least Squares Regression(PLS)
+   * Regularisation Methods
+   * Random Forest
+   * Gradient Boosting Machines (GBMs)
+   * Partial Least Squares Regression(PLS)
 
 The data contains observations for 497 days of 44 variables, which detail the reactor settings and feed composition.In particular:
 
